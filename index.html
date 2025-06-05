@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Ley de Ohm </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador Ley de Ohm</h1>
+    </header>
+
+    <main>
+        <section class="formula">
+            <span class="v">V</span> = <span class="i">I</span> × <span class="r">R</span>
+        </section>
+
+        <section class="controls">  
+            <div class="slider-group">
+                <label for="voltaje">Voltaje (V): <span id="voltajeLabel">4.5</span> V</label>
+                <input type="range" id="voltaje" min="0" max="10" step="0.1" value="4.5">
+            </div>
+            <div class="slider-group">
+                <label for="resistencia">Resistencia (Ω): <span id="resistenciaLabel">500</span> Ω</label>
+                <input type="range" id="resistencia" min="1" max="1000" step="1" value="500">
+            </div>
+        </section>
+
+        <section class="resultado">
+            <p>Corriente = <span id="corriente">9.0</span> mA</p>
+        </section>
+        <div class="reset-container">
+  <button id="resetBtn" class="reset-button">🔄 Reiniciar Parámetros</button>
+</div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
